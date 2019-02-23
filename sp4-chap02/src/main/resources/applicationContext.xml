@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 스프링이 생성하는 객체 = 빈(bean). 빈 객체에 대한 정보를 담고 있는 태그가 <bean> -->
+	<!-- 객체를 생성하고 초기화. -->
+	<bean id="greeter" class="chap02.Greeter"> <!-- Greeter greeter = new Greeter(); -->
+		<property name="format" value="%s, 안녕하세요!" /> <!-- greeter.setFormat("%, 안녕하세요!"); -->
+	</bean>
+	
+	<bean id="greeter1" class="chap02.Greeter">
+		<property name="format" value="%s, 안녕하세요!" />
+	</bean>
+</beans>
